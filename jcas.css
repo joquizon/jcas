@@ -1,11 +1,11 @@
-.butts {position:fixed;
-		margin-left:05px;
-		margin-top:160px;
+.butts {position:absolute;
+		margin-left:900px;
+		margin-top:460px;
 		z-index: 40;}
 
-.buttsrev {position:fixed;
-		   margin-left:55px;
-		   margin-top:160px;
+.buttsrev {position:absolute;
+		   margin-left:955px;
+		   margin-top:460px;
 		   z-index: 40;}		
 
 #butt  {display:block;		
@@ -59,20 +59,19 @@
 		height:40px;}		
 
 
-
-
 .first {z-index: 1;
 		clear:both;
 		float:left;}
 
 #imgholder {display:inline;
 				position:absolute;
+				margin-left:0px;
 				width:1600px;
 				height:900px;}
 
 
 #exp1 {margin-top: 250px;
-	   margin-left:800px ;
+	   margin-left:802px ;
 	   height:20px;
 	   width:20px;
 	   position:absolute;
@@ -86,7 +85,6 @@
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   position:absolute;
 	   clear:both;
 	   display:none;}	
 
@@ -96,7 +94,6 @@
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   position:absolute;
 	   clear:both;}		   		
 
 #exp2a {margin-top: 470px;
@@ -105,9 +102,35 @@
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   position:absolute;
 	   clear:both;
 	   display:none;}	
+
+#exp3 {margin-top: 110px;
+	   margin-left:735px ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   clear:both;}		   		
+
+#exp3a {margin-top: 110px;
+	   margin-left:765px ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   clear:both;
+	   display:none;}	
+
+
+#wk {margin-top: 5px;
+	   margin-left:0px ;
+	   height:416px;file:///C:/Users/jose/Desktop/dancerbot/seq1b/j-cas0181.jpg
+	   width:486px;
+	   position:absolute;
+	   z-index:10;
+	   clear:both;
+	   display:block;}	
 
 #jcas {width:1536px;
 	   height:864px;
