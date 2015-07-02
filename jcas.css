@@ -1,12 +1,44 @@
+
+@font-face {font-family: helv;
+			src:url(helvconlight.otf) ; }
+
 .butts {position:absolute;
-		margin-left:900px;
+		margin-left:1000px;
 		margin-top:460px;
 		z-index: 40;}
 
+.dancebutts {position:absolute;
+		margin-left:1000px;
+		margin-top:460px;
+		z-index: 40;}
+
+
 .buttsrev {position:absolute;
-		   margin-left:955px;
+		   margin-left:1055px;
 		   margin-top:460px;
 		   z-index: 40;}		
+
+#dbutt  {display:block;		
+		width:40px;
+		height:40px;}
+
+#dbutt2  {display:block;		
+		width:40px;
+		height:40px;
+		margin-left: 30px;
+		margin-top:-10px;}
+
+#dbutt3 {display:block;		
+		width:40px;
+		height:40px;
+		margin-left: -30px;
+		margin-top:-39px;}
+
+#dbutt4  {display:block;		
+		width:40px;
+		height:40px;
+		margin-top: -10px}
+
 
 #butt  {display:block;		
 		width:40px;
@@ -125,9 +157,9 @@
 
 #wk {margin-top: 5px;
 	   margin-left:0px ;
-	   height:416px;file:///C:/Users/jose/Desktop/dancerbot/seq1b/j-cas0181.jpg
+	   height:416px;
 	   width:486px;
-	   position:absolute;
+	   position:fixed;
 	   z-index:10;
 	   clear:both;
 	   display:block;}	
@@ -137,3 +169,34 @@
 	   padding:0px;
 	   margin:2.5%;
 	   border:0px;}
+
+#explore {margin-top: 0px;
+	   margin-left:80% ;
+	   height:392px;
+	   width:466px;
+	   position:fixed;
+		clear:both;}		
+
+.nav {margin-top: 0px;
+	   height:10%;
+	   width:8%;}		
+
+#explore2 {background-color: rgb(255, 255, 255, 0);
+		margin-top: 70px;
+	   margin-left:75% ;
+	   margin-right: 20%;
+	   height:0px;
+	   padding: 5px;
+	   width:0px;
+	   position:fixed;
+		clear:both;
+		z-index: 55;
+		border:2px;
+		border-radius: 12px;}
+
+p {font-size: 0px;
+	color:rgb(45, 45, 45);
+	font-family: helv;
+	letter-spacing: .25px;
+	line-height: 25px;
+	 text-align:center; }	
