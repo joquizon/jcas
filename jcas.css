@@ -1,0 +1,16 @@
+.butts {position:fixed;
+			margin-left:100px;
+			margin-top:100px;
+				z-index: 30;
+					width:100px;}
+
+.buttsrev {position:fixed;
+			margin-left:150px;
+			margin-top:100px;
+				z-index: 30;
+					width:100px;}
+
+
+.first {z-index: 1;
+		clear:both;
+		float:left;}
