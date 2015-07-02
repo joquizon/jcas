@@ -12,50 +12,38 @@
 			
 		
 		<div class="butts">
-			<img src="leftturn.png" id="butt">
-	
-			<img src="leftturn.png" id="butt2">
-	
+			<img src="leftturn.png" id="butt">	
+			<img src="leftturn.png" id="butt2">	
 			<img src="leftturn.png" id="butt3">
-
 			<img src="leftturn.png" id="butt4">
-
 			<img src="leftturn.png" id="butt5">	
-
 			<img src="leftturn.png" id="butt6">		
-
 			<img src="leftturn.png" id="butt7">		
-
 			<img src="leftturn.png" id="butt8">	
-		
-
 		</div>
 
 
 		<div class="buttsrev">
-			<img src="rightturn.png" id="butta">
-	
+			<img src="rightturn.png" id="butta">	
 			<img src="rightturn.png" id="butt2a">
-	
 			<img src="rightturn.png" id="butt3a">
-
 			<img src="rightturn.png" id="butt4a">
-
 			<img src="rightturn.png" id="butt5a">	
-
 			<img src="rightturn.png" id="butt6a">		
-
 			<img src="rightturn.png" id="butt7a">						
 			<img src="rightturn.png" id="butt8a">	
 		</div>
 
 		<div id="imgholder">
-
+			<img id="wk"src="jcaswk.png">
 			<img id="exp1"src="exp.png">
 			<img id="exp1a"src="expopen.png">
 			<img id="exp2"src="exp.png">
-			<img id="exp2a"src="exp.png">			
+			<img id="exp2a"src="expopen.png">
+			<img id="exp3"src="exp.png">
+			<img id="exp3a"src="expopen.png">				
 
+			<!-- jcas the droid himself -->
 			<img src="seq1b/j-cas0181.jpg" class="first" id="jcas">
 
 		</div>
@@ -64,10 +52,157 @@
 		<script>
 			$( document ).ready(function() {console.log( "ready!" );});
 
+// head exploder
+			$("#exp3").click(function (){
+			$(this).fadeOut(0);
+			$("#exp1").fadeOut(0);			
+			$("#exp2").fadeOut(0);
+			$("#butt").fadeOut(0);
+			$("#butta").fadeOut(0);
+			$("#exp3a").fadeIn(0);
+			$(".first").clearQueue().attr("src","seq1b/j-cas0120.jpg")
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0121.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0122.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0123.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0124.jpg");next();})				
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0125.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0126.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0127.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0128.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0129.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0130.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0131.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0132.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0133.jpg");next();})				
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0134.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0135.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0136.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0137.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0138.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0139.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0140.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0141.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0142.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0143.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0144.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0145.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0146.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0147.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0148.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0149.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0150.jpg");});
+				});
+
+			$("#exp3a").click(function (){
+			$(this).fadeOut(0);
+			$("#exp2").fadeIn(0);			
+			$("#exp1").fadeIn(0);
+			$("#butt").fadeIn(0);
+			$("#butta").fadeIn(0);
+			$("#exp3").fadeIn(0);
+			$(".first").clearQueue().attr("src","seq1b/j-cas0150.jpg")
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0150.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0149.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0148.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0147.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0146.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0145.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0144.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0143.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0142.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0141.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0140.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0139.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0138.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0137.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0136.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0135.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0134.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0133.jpg");next();})				
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0132.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0131.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0130.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0129.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0128.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0127.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0126.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0125.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0124.jpg");next();})				
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0123.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0122.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0121.jpg");});
+				});
+
+
+
+
+
+
 // arm exploder
 			$("#exp1").click(function (){
 			$(this).fadeOut(0);
 			$("#exp2").fadeOut(0);
+			$("#exp3").fadeOut(0);
 			$("#butt").fadeOut(0);
 			$("#butta").fadeOut(0);
 			$("#exp1a").fadeIn(0);
@@ -137,7 +272,8 @@
 			$("#exp1a").click(function (){
 			$(this).fadeOut(0);
 			$("#exp1").fadeIn(0);
-			$("#exp2").fadeIn(0);			
+			$("#exp2").fadeIn(0);
+			$("#exp3").fadeIn(0);			
 			$("#butt").fadeIn(0);
 			$("#butta").fadeIn(0);
 			$(".first").clearQueue().attr("src","seq1b/j-cas0030.jpg")
@@ -213,6 +349,8 @@
 
 			$("#exp2").click(function (){
 			$(this).fadeOut(0);
+			$("#exp1").fadeOut(0);
+			$("#exp3").fadeOut(0);			
 			$("#butt").fadeOut(0);
 			$("#butta").fadeOut(0);
 			$("#exp2a").fadeIn(0);
@@ -280,6 +418,76 @@
 				});
 
 
+			$("#exp2a").click(function (){
+			$(this).fadeOut(0);
+			$("#exp1").fadeIn(0);
+			$("#exp2").fadeIn(0);
+			$("#exp3").fadeIn(0);			
+			$("#butt").fadeIn(0);
+			$("#butta").fadeIn(0);
+			$(".first").clearQueue().attr("src","seq1b/j-cas0090.jpg")
+							.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0090.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0089.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0088.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0086.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0087.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0085.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas00284.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0083.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0082.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0081.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0080.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0079.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0078.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0077.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0076.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0075.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0074.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0073.jpg");next();})				
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0072.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0071.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0070.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0069.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0068.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0067.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0066.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0065.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0064.jpg");next();})				
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0063.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0062.jpg");next();})
+				.delay(13)
+				.queue(function(next){$(this).attr("src","seq1b/j-cas0181.jpg");}); 
+
+				 });
 
 
 
@@ -288,6 +496,8 @@
 			$("#butt").click(function front(){
 				$(this).fadeOut(0);
 				$("#exp1").fadeOut(0);
+				$("#exp2").fadeOut(0);
+				$("#exp3").fadeOut(0);				
 				$("#butt2").fadeIn(0);
 				$("#butta").fadeOut(0);
 				$("#butt8a").fadeIn(0);
@@ -791,6 +1001,8 @@
 				$("#butt8").click(function leftfront(){
 				$(this).fadeOut(0);
 				$("#exp1").fadeIn(0);
+				$("#exp2").fadeIn(0);
+				$("#exp3").fadeIn(0);				
 				$("#butt").fadeIn(0);
 				$("#butt2a").fadeOut(0);
 				$("#butta").fadeIn(0);					
@@ -869,6 +1081,8 @@
 				$("#butta").click(function leftfront(){
 				$(this).fadeOut(0);
 				$("#exp1").fadeOut(0);
+				$("#exp2").fadeOut(0);				
+				$("#exp3").fadeOut(0);				
 				$("#butt2a").fadeIn(0);
 				$("#butt").fadeOut(0);
 				$("#butt8").fadeIn(0);
@@ -1366,6 +1580,8 @@
 				$(this).fadeOut(0);
 				$("#butta").fadeIn(0);
 				$("#exp1").fadeIn(0);
+				$("#exp2").fadeIn(0);
+				$("#exp3").fadeIn(0);				
 				$("#butt2").fadeOut(0);
 				$("#butt").fadeIn(0);
 				$(".first").clearQueue().attr("src","seq1b/j-cas0213.jpg")
