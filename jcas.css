@@ -1,16 +1,36 @@
 .butts {position:fixed;
-			margin-left:100px;
-			margin-top:100px;
-				z-index: 30;
-					width:100px;}
+			margin-left:15%;
+			margin-top:16%;
+				z-index: 40;
+					;}
 
 .buttsrev {position:fixed;
-			margin-left:150px;
-			margin-top:100px;
-				z-index: 30;
-					width:100px;}
+			margin-left:22%;
+			margin-top:16%;
+				z-index: 40;
+					;}
 
 
 .first {z-index: 1;
 		clear:both;
 		float:left;}
+
+#imgholder {display:inline;
+				position:absolute;
+				width:1600px;
+				height:900px;}
+
+
+#exp1 {margin: 35px;
+		height:864px;
+		 width:1536px;
+		position:absolute;
+		z-index:10;
+		position:absolute;
+		clear:both;}				
+
+#jcas {width:1536px;
+	   height:864px;
+	   padding:0px;
+	   margin:2.5%;
+	   border:0px;}
