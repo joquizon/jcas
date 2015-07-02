@@ -36,6 +36,20 @@
 
 		<div id="imgholder">
 			<img id="wk"src="jcaswk.png">
+			
+			<div id="explore">
+				<img class="nav" src="exbutt.png">
+				<a href="dancemode.html">
+					<img class="nav" src="dcbutt.png">
+				</a>
+				<img class="nav" id="quest" src="questbutt.png">						
+			</div>
+			<div id="explore2">
+				<p id="desc">
+					J-cas is a virtual dance droid. He has 47 points of articulation. He was created to dance. His name is an abbreviation of Johnny Castle, a character from the 1987 blockbuster hit Dirty Dancing. Patrick Swayze played the dancing bad boy from the wrong side of the tracks. While J-cas is no match for Johnny on the dance floor, like Johnny his love for dance know no bounds. 
+				</p>	
+			</div>
+
 			<img id="exp1"src="exp.png">
 			<img id="exp1a"src="expopen.png">
 			<img id="exp2"src="exp.png">
@@ -51,6 +65,17 @@
 
 		<script>
 			$( document ).ready(function() {console.log( "ready!" );});
+
+			$("#quest").click(function(){
+				$("#desc").animate({"font-size":"20px"},150);
+				$("#explore2").animate({"height":"400px","width":"200px"},150);
+				$("#explore2").css("background-color","rgba(255, 255, 255, .5)")});
+
+			$("#quest").dblclick(function(){
+				$("#desc").animate({"font-size":"0px"},150);
+				$("#explore2").animate({"height":"0px","width":"0px"},150);
+				$("#explore2").css("background-color","rgba(255, 255, 255, .0)")});
+			
 
 // head exploder
 			$("#exp3").click(function (){
