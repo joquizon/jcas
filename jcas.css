@@ -1,14 +1,64 @@
 .butts {position:fixed;
-			margin-left:15%;
-			margin-top:16%;
-				z-index: 40;
-					;}
+		margin-left:05px;
+		margin-top:160px;
+		z-index: 40;}
 
 .buttsrev {position:fixed;
-			margin-left:22%;
-			margin-top:16%;
-				z-index: 40;
-					;}
+		   margin-left:55px;
+		   margin-top:160px;
+		   z-index: 40;}		
+
+#butt  {display:block;		
+		width:40px;
+		height:40px;}
+#butt2 {display:none;		
+		width:40px;
+		height:40px;}
+#butt3 {display:none;		
+		width:40px;
+		height:40px;} 
+#butt4 {display:none;		
+		width:40px;
+		height:40px;}
+#butt5 {display:none;		
+		width:40px;
+		height:40px;}
+#butt6 {display:none;		
+		width:40px;
+		height:40px;}
+#butt7 {display:none;		
+		width:40px;
+		height:40px;}
+#butt8 {display:none;		
+		width:40px;
+		height:40px;}
+
+#butta  {display:block;		
+		width:40px;
+		height:40px;}
+#butt2a {display:none;		
+		width:40px;
+		height:40px;}
+#butt3a {display:none;		
+		width:40px;
+		height:40px;} 
+#butt4a {display:none;		
+		width:40px;
+		height:40px;}
+#butt5a {display:none;		
+		width:40px;
+		height:40px;}
+#butt6a {display:none;		
+		width:40px;
+		height:40px;}
+#butt7a {display:none;		
+		width:40px;
+		height:40px;}
+#butt8a {display:none;		
+		width:40px;
+		height:40px;}		
+
+
 
 
 .first {z-index: 1;
@@ -21,13 +71,43 @@
 				height:900px;}
 
 
-#exp1 {margin: 35px;
-		height:864px;
-		 width:1536px;
-		position:absolute;
-		z-index:10;
-		position:absolute;
-		clear:both;}				
+#exp1 {margin-top: 250px;
+	   margin-left:800px ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   position:absolute;
+	   clear:both;}		
+
+#exp1a {margin-top: 250px;
+	   margin-left:800px ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   position:absolute;
+	   clear:both;
+	   display:none;}	
+
+#exp2 {margin-top: 470px;
+	   margin-left:760px ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   position:absolute;
+	   clear:both;}		   		
+
+#exp2a {margin-top: 470px;
+	   margin-left:760px ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   position:absolute;
+	   clear:both;
+	   display:none;}	
 
 #jcas {width:1536px;
 	   height:864px;
