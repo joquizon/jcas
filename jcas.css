@@ -16,8 +16,8 @@ body {margin:0;
 		   z-index: 40;}		
 
 .dancebutts {position:absolute;
-		margin-left:1000px;
-		margin-top:460px;
+		margin-left:65%;
+		margin-top:30%;
 		z-index: 40;}
 
 
@@ -149,7 +149,7 @@ body {margin:0;
 	   clear:both;}		   		
 
 #exp3a {margin-top: 4%;
-	   margin-left:49.25% ;
+	   margin-left:50.75% ;
 	   height:20px;
 	   width:20px;
 	   position:fixed;
@@ -211,19 +211,53 @@ p {font-size: 0px;
  /**/
 
 
-/*@media (max-width: 770px) {
-  #jcas {width:983.2px;
-	   height:552.96px;
-	   margin-left:-220px;
-	   margin:2.5%;
-	   border:0px;}
-
-	#wk {margin-top: 5px;
-	   margin-left:0px ;
-	   height:208px;
-	   width:243px;
+@media (max-width: 400px) {
+#wk {
+	   height:69px;
+	   width:235px;
 	   position:fixed;
 	   z-index:10;
 	   clear:both;
-	   display:block;}
-}*/
+	   }	
+
+#jcas {width:275%;
+	   height:275%;
+	   padding:0px;
+	   margin-left:-70%;
+	   margin-top:34%;
+	   border:0px;}
+
+#explore {margin-top: 6%;
+	   margin-left:34% ;
+	   height:292px;
+	   width:366px;
+	   display:block;
+	   position:fixed;
+		clear:both;}	
+
+.butts {position:absolute;
+		margin-left:70%;
+		margin-top:150%;
+		z-index: 40;}
+.buttsrev {position:absolute;
+		   margin-left:85%;
+		   margin-top:150%;
+		   z-index: 40;}
+
+#exp1 {display:none;}		
+
+#exp1a {display:none;}	
+
+#exp2 {display:none;}		   		
+
+#exp2a {display:none;}	
+
+#exp3 {display:none;}		   		
+
+#exp3a {display:none;}	
+
+.dancebutts {position:absolute;
+		margin-left:75%;
+		margin-top:130%;
+		z-index: 40;}
+}
