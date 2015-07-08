@@ -9,16 +9,19 @@ body {margin:0;
 .butts {position:absolute;
 		margin-left:60%;
 		margin-top:30%;
-		z-index: 40;}
+		z-index: 40;
+		cursor:pointer;}
 .buttsrev {position:absolute;
 		   margin-left:65%;
 		   margin-top:30%;
-		   z-index: 40;}		
+		   z-index: 40;
+		   cursor:pointer;}		
 
 .dancebutts {position:absolute;
 		margin-left:65%;
 		margin-top:30%;
-		z-index: 40;}
+		z-index: 40;
+		cursor:pointer;}
 
 
 
@@ -101,61 +104,87 @@ body {margin:0;
 
 #imgholder {display:inline;
 				position:absolute;
-				margin-left:0px;
-}
+				margin-left:0px;}
+
+#desc {}
 
 
 #exp1 {margin-top: 10%;
 	   margin-left:52% ;
 	   height:20px;
 	   width:20px;
-	   position:fixed;
+	   position:absolute;
 	   z-index:10;
-
-	   clear:both;}		
+	   clear:both;
+	   cursor:pointer;}		
 
 #exp1a {margin-top:10%;
 	   margin-left:52% ;
 	   height:20px;
 	   width:20px;
-	   position:fixed;
+	   position:absolute;
 	   z-index:10;
 	   clear:both;
-	   display:none;}	
+	   display:none;
+	   cursor:pointer;}	
 
 #exp2 {margin-top: 24%;
 	   margin-left: 50.55% ;
 	   height:20px;
 	   width:20px;
-	   position:fixed;
+	   position:absolute;
 	   z-index:10;
-	   clear:both;}		   		
+	   clear:both;
+	   cursor:pointer;}		   		
 
 #exp2a {margin-top: 24%;
 	   margin-left: 50.55%;
 	   height:20px;
 	   width:20px;
-	   position:fixed;
+	   position:absolute;
 	   z-index:10;
 	   clear:both;
-	   display:none;}	
+	   display:none;
+	   cursor:pointer;}	
 
 #exp3 {margin-top: 4%;
 	   margin-left:49.25% ;
 	   height:20px;
 	   width:20px;
-	   position:fixed;
+	   position:absolute;
 	   z-index:10;
-	   clear:both;}		   		
+	   clear:both;
+	   cursor:pointer;}		   		
 
 #exp3a {margin-top: 4%;
 	   margin-left:50.75% ;
 	   height:20px;
 	   width:20px;
-	   position:fixed;
+	   position:absolute;
 	   z-index:10;
 	   clear:both;
-	   display:none;}	
+	   display:none;
+	   cursor:pointer;}	
+
+#exp4 {margin-top: 13%;
+	   margin-left:46% ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   clear:both;
+	   cursor:pointer;}		   		
+
+#exp4a {margin-top: 13%;
+	   margin-left:46% ;
+	   height:20px;
+	   width:20px;
+	   position:absolute;
+	   z-index:10;
+	   clear:both;
+	   display:none;
+	   cursor:pointer;}	
+
 
 
 #wk {
@@ -177,6 +206,7 @@ body {margin:0;
 	   height:392px;
 	   width:466px;
 	   position:fixed;
+	   cursor:pointer;
 		clear:both;}		
 
 .nav {margin-top: 4px;
@@ -190,9 +220,9 @@ body {margin:0;
 	   width:10%;}		
 
 #explore2 {background-color: rgb(255, 255, 255, 0);
-/*		margin-top: 70px;
+		margin-top: 70px;
 	   margin-left:75% ;
-	   margin-right: 20%;*/
+	   margin-right: 20%;
 	   height:0px;
 	   padding: 5px;
 	   width:0px;
@@ -200,8 +230,21 @@ body {margin:0;
 		clear:both;
 		z-index: 55;
 		border:2px;
-		border-radius: 12px;}
-
+		border-radius: 12px;
+		cursor:pointer;}
+#explore3 {margin-top: 7%;
+	   height:400px;
+	   padding: 5px;
+	   width:320px;
+	   position:fixed;
+		clear:both;
+		z-index: 55}		
+#index {font-family: helv;
+		color:white;
+		font-size:17px;
+		letter-spacing: .25px;
+	line-height: 25px;
+	 text-align:left;}
 p {font-size: 0px;
 	color:rgb(45, 45, 45);
 	font-family: helv;
@@ -227,8 +270,8 @@ p {font-size: 0px;
 	   margin-top:34%;
 	   border:0px;}
 
-#explore {margin-top: 6%;
-	   margin-left:34% ;
+#explore {margin-top: 22%;
+	   margin-left:0% ;
 	   height:292px;
 	   width:366px;
 	   display:block;
@@ -257,7 +300,7 @@ p {font-size: 0px;
 #exp3a {display:none;}	
 
 .dancebutts {position:absolute;
-		margin-left:75%;
-		margin-top:130%;
-		z-index: 40;}
+			margin-left:75%;
+			margin-top:130%;
+			z-index: 40;}
 }
