@@ -1,36 +1,39 @@
 <!doctype html>
 <html>
 	<head>
-				<script type="text/javascript" src="jquery1102.js">
+		<script type="text/javascript" src="jquery1102.js">
 		</script>
-	     <script type="text/javascript" src="jcas2.js" ></script>
+	    <script type="text/javascript" src="jcas2.js" ></script>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 	    <link rel="stylesheet" type="text/css" href="jcas.css">
 	</head>
 
-	<body style="background-color:rgb(45,45,45);height:100%;width:100%">
-<img src="ddancing.gif" id="ddancing">
+	<body>
+		<div id="ddancing">
+			<img src="ddancingmulti3.gif" id="ddmulti">
+			<img src="closer.png" id="closer1">
+		</div>
 
 		<div id="imgholder">
 			<img id="wk"src="jcaswk.png">
-			
-			<div id="explore">
-				<a href="jcas.html">
-					<img id="expr" src="exbutt.png">
-				</a>
-				<a href="dancemode.html">				
-				<img class="nav" src="dcbutt.png">
-				</a>
-				<img class="nav" id="quest" src="questbutt.png">						
+				<div id="explore">
+					<a href="jcas.html">
+						<img id="expr" src="exbutt.png">
+					</a>
+					<a href="dancemode.html">				
+						<img class="nav" src="dcbutt.png">
+					</a>
+					<img class="nav" id="quest" src="questbutt.png">			
 			</div>
+
 			<div id="explore3">
 					<p id="index">
 					J-cas is a virtual dance droid, that was created to dance. He has 47 points of articulation. His name is an abbreviation of Johnny Castle, a character played by Patrick Swayze in the 1987 blockbuster hit Dirty Dancing. Johnny Castle was a dancing bad boy from the wrong side of the tracks. While J-Cas is no match for the legendary Johnny on the dance floor, like Johnny his love for dance and Baby Houseman knows no bounds. You can check out J-Cas in the Explorer Mode by clicking the eye button or see J-Cas bust some moves in the Dance Mode by clicking the D button. You can click the ? button if you are not sure of the controls.Click the JCAS logo on the top left corner to return to this page at anytime.
 				</p>
 			</div>		
 
-				<img id="thought"src="thought.png">
-<img src="j-cas0439.jpg" class="first" id="jcas">
+			<img id="thought"src="thought.png">
+			<img src="j-cas0439.jpg" class="first" id="jcas">
 
 	
 			<audio autoplay loop>
@@ -42,7 +45,16 @@
 <script>
 			$("#thought").click(function(){
 				$(this).animate({"height":"0px","width":"0px"},150);
+				$("#closer1").animate({"height":"20px","width":"20px"},150);
+				$("#ddmulti").animate({"height":"202px","width":"359px"},150);
 				$("#ddancing").animate({"height":"203px","width":"360px"},150);
+});
+
+			$("#closer1").click(function(){
+				$(this).animate({"height":"0px","width":"0px"},150);
+				$("#thought").animate({"height":"50px","width":"50px"},150);
+				$("#ddmulti").animate({"height":"0px","width":"0px"},150);
+				$("#ddancing").animate({"height":"0px","width":"0px"},150);
 });
 
 </script>
