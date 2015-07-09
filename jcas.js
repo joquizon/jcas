@@ -1,15 +1,16 @@
 			$( document ).ready(function() {   
 
 			$("#quest").click(function(){
-				$("#desc").animate({"font-size":"20px"},150);
-				$("#explore2").animate({"height":"400px","width":"200px"},150);
+				$("#desc2").animate({"font-size":"14px"},150);
+				$("#explore2").animate({"height":"112px","width":"200px"},150);
+				$("#closer").animate({"height":"15px","width":"15px"},150);
 				$("#explore2").css("background-color","rgba(255, 255, 255, .5)")});
 
-			$("#quest").dblclick(function(){
-				$("#desc").animate({"font-size":"0px"},150);
+			$("#closer").click(function(){
+				$(this).animate({"height":"0px","width":"0px"},150);
+				$("#desc2").animate({"font-size":"0px"},150);
 				$("#explore2").animate({"height":"0px","width":"0px"},150);
 				$("#explore2").css("background-color","rgba(255, 255, 255, .0)")});
-			
 
 // head exploder
 			$("#exp3").click(function (){
