@@ -6,11 +6,38 @@ body {margin:0;
       padding:0px;
 	   border:0px;}
 
+#index  {background-image: url();
+		height:100%;
+		width:100%;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;}
+
+#ddancing {margin-top: 8%;
+	   margin-left:700px;
+	   height:0px;
+	   width:0px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+		opacity: 0.5;}	
+
+#thought {margin-top: 2%;
+	   margin-left:48% ;
+	   height:40px;
+	   width:40px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   cursor:pointer;}		
+
+
 .butts {position:absolute;
 		margin-left:60%;
 		margin-top:30%;
 		z-index: 40;
 		cursor:pointer;}
+
 .buttsrev {position:absolute;
 		   margin-left:65%;
 		   margin-top:30%;
@@ -105,9 +132,6 @@ body {margin:0;
 #imgholder {display:inline;
 				position:absolute;
 				margin-left:0px;}
-
-#desc {}
-
 
 #exp1 {margin-top: 10%;
 	   margin-left:52% ;
@@ -219,6 +243,19 @@ body {margin:0;
 	   height:7%;
 	   width:10%;}		
 
+#closer {height:0px;
+		 width:0px;
+		 margin:0px;
+		 margin-left: 185px}
+
+#desc2 {font-size: 0px;
+	margin-top: 0px;
+	color:white;
+	font-family: helv;
+	letter-spacing: .55px;
+	line-height: 15px;
+	 text-align:left; }
+
 #explore2 {background-color: rgb(255, 255, 255, 0);
 		margin-top: 70px;
 	   margin-left:75% ;
@@ -232,6 +269,8 @@ body {margin:0;
 		border:2px;
 		border-radius: 12px;
 		cursor:pointer;}
+
+
 #explore3 {margin-top: 7%;
 	   height:400px;
 	   padding: 5px;
@@ -256,8 +295,8 @@ p {font-size: 0px;
 
 @media (max-width: 400px) {
 #wk {
-	   height:69px;
-	   width:235px;
+	   height:52px;
+	   width:176px;
 	   position:fixed;
 	   z-index:10;
 	   clear:both;
@@ -287,20 +326,283 @@ p {font-size: 0px;
 		   margin-top:150%;
 		   z-index: 40;}
 
-#exp1 {display:none;}		
+#exp1 {height:0px;
+		width:0px;}		
 
-#exp1a {display:none;}	
+#exp1a {height:0px;
+		width:0px;}		
+#exp2 {height:0px;
+		width:0px;}		
+#exp2a {height:0px;
+		width:0px;}		
+#exp3 {height:0px;
+		width:0px;}		
+#exp3a {height:0px;
+		width:0px;}		
+#exp4 {height:0px;
+		width:0px;}		
+#exp4a {height:0px;
+		width:0px;}		
+.dancebutts {position:absolute;
+			margin-left:75%;
+			margin-top:130%;
+			z-index: 40;}
+#explore3 {margin-top:30%;
+	   height:400px;
+	   padding: 5px;
+	   width:320px;
+	   position:fixed;
+		clear:both;
+		z-index: 55}		
+#index {font-family: helv;
+		color:white;
+		font-size:16px;
+		letter-spacing: .25px;
+	line-height: 15px;
+	 text-align:left;}}
 
-#exp2 {display:none;}		   		
 
-#exp2a {display:none;}	
+@media (min-width:380px)and (max-width:678px){
+#wk {
+	   height:52px;
+	   width:176px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   }	
 
-#exp3 {display:none;}		   		
+#jcas {width:95%;
+	   height:95%;
+	   padding:0px;
+	   margin-left:10%;
+	   margin-top:2%;
+	   border:0px;}
 
-#exp3a {display:none;}	
+#explore {margin-top: 0%;
+	   margin-left:0% ;
+	   height:292px;
+	   width:366px;
+	   display:block;
+	   position:fixed;
+		clear:both;}	
+
+ 
+
+.butts {position:absolute;
+		margin-left:70%;
+		margin-top:30%;
+		z-index: 40;}
+.buttsrev {position:absolute;
+		   margin-left:85%;
+		   margin-top:30%;
+		   z-index: 40;}
+
+#explore {margin-top: 0px;
+	   margin-left:72% ;
+	   height:392px;
+	   width:466px;
+	   position:fixed;
+	   cursor:pointer;
+		clear:both;}	
+#closer {height:0px;
+		 width:0px;
+		 margin:0px;
+		 margin-left:0px}
+
+#desc2 {font-size: 0px;
+	margin-top: 0px;
+	color:white;
+	font-family: helv;
+	letter-spacing: .55px;
+	line-height: 15px;
+	 text-align:left; }
+
+#explore2 {background-color: rgb(255, 255, 255, 0);
+		margin-top: 70px;
+	   margin-left:0% ;
+	   margin-right:0%;
+	   height:0px;
+	   padding: 5px;
+	   width:0px;
+	   position:fixed;
+		clear:both;
+		z-index: 55;
+		border:2px;
+		border-radius: 12px;
+		cursor:pointer;}
+.dancebutts {position:absolute;
+			margin-left:75%;
+			margin-top:20%;
+			z-index: 40;}
+
+#exp1 {margin-top: 10%;
+	   margin-left:54% ;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   cursor:pointer;}	
+
+#exp1a {margin-top:10%;
+	   margin-left:54% ;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   display:none;
+	   cursor:pointer;}	
+
+#exp2 {margin-top: 24%;
+	   margin-left: 52.55% ;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   cursor:pointer;}		   		
+
+#exp2a {margin-top: 24%;
+	   margin-left: 52.55%;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   display:none;
+	   cursor:pointer;}	
+
+#exp3 {margin-top: 4%;
+	   margin-left:51.25% ;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   cursor:pointer;}		   		
+
+#exp3a {margin-top: 4%;
+	   margin-left:52.75% ;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   display:none;
+	   cursor:pointer;}	
+
+#exp4 {margin-top: 13%;
+	   margin-left:48% ;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   cursor:pointer;}		   		
+
+#exp4a {margin-top: 13%;
+	   margin-left:48% ;
+	   height:20px;
+	   width:20px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   display:none;
+	   cursor:pointer;}
+#explore3 {margin-top:6%;
+	   height:400px;
+	   padding: 5px;
+	   width:180px;
+	   position:fixed;
+		clear:both;
+		z-index: 55}		
+#index {font-family: helv;
+		color:white;
+		font-size:14px;
+		letter-spacing: .5px;
+	line-height:13px;
+	 text-align:left;}
+
+}
+
+/**/
+@media (min-width: 668px) and (max-width: 700px){
+#wk {
+	   height:69px;
+	   width:235px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   }	
+
+#jcas {width:140%;
+	   height:140%;
+	   padding:0px;
+	   margin-left:2%;
+	   margin-top:2%;
+	   border:0px;}
+
+#explore {margin-top:0%;
+	   margin-left:65% ;
+	   height:292px;
+	   width:366px;
+	   display:block;
+	   position:fixed;
+		clear:both;}	
+
+.butts {position:absolute;
+		margin-left:70%;
+		margin-top:150%;
+		z-index: 40;}
+.buttsrev {position:absolute;
+		   margin-left:85%;
+		   margin-top:150%;
+		   z-index: 40;}
+
+#closer {height:0px;
+		 width:0px;
+		 margin:0px;
+		 margin-left:0px}
+
+#desc2 {font-size: 0px;
+	margin-top: 0px;
+	color:white;
+	font-family: helv;
+	letter-spacing: .55px;
+	line-height: 15px;
+	 text-align:left; }
+
+#explore2 {background-color: rgb(255, 255, 255, 0);
+		margin-top: 70px;
+	   margin-left:0% ;
+	   margin-right: 20%;
+	   height:0px;
+	   padding: 5px;
+	   width:0px;
+	   position:fixed;
+		clear:both;
+		z-index: 55;
+		border:2px;
+		border-radius: 12px;
+		cursor:pointer;}
 
 .dancebutts {position:absolute;
 			margin-left:75%;
 			margin-top:130%;
 			z-index: 40;}
-}
+#explore3 {margin-top:30%;
+	   height:400px;
+	   padding: 5px;
+	   width:320px;
+	   position:fixed;
+		clear:both;
+		z-index: 55}		
+#index {font-family: helv;
+		color:white;
+		font-size:16px;
+		letter-spacing: .25px;
+	line-height: 15px;
+	 text-align:left;}}
+
+
