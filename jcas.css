@@ -4,7 +4,8 @@
 
 body {margin:0;
       padding:0px;
-	   border:0px;}
+	   border:0px;
+	   background-color:rgb(45,45,45);}
 
 #index  {background-image: url();
 		height:100%;
@@ -20,17 +21,24 @@ body {margin:0;
 	   position:fixed;
 	   z-index:10;
 	   clear:both;
-		opacity: 0.5;}	
+		opacity: 0.5;}
+
+#ddmulti {height:0px;
+	   width:0px;}	
 
 #thought {margin-top: 2%;
 	   margin-left:48% ;
-	   height:40px;
-	   width:40px;
+	   height:50px;
+	   width:50px;
 	   position:fixed;
 	   z-index:10;
 	   clear:both;
 	   cursor:pointer;}		
-
+#closer1 {height:0px;
+		 width:0px;
+		 margin:0px;
+		 margin-left:0px;
+		cursor:pointer;}
 
 .butts {position:absolute;
 		margin-left:60%;
@@ -246,7 +254,8 @@ body {margin:0;
 #closer {height:0px;
 		 width:0px;
 		 margin:0px;
-		 margin-left: 185px}
+		 margin-left: 185px;
+		cursor:pointer;}
 
 #desc2 {font-size: 0px;
 	margin-top: 0px;
@@ -309,14 +318,32 @@ p {font-size: 0px;
 	   margin-top:34%;
 	   border:0px;}
 
-#explore {margin-top: 22%;
+#explore {margin-top: 10%;
 	   margin-left:0% ;
 	   height:292px;
 	   width:366px;
 	   display:block;
 	   position:fixed;
 		clear:both;}	
+#thought {margin-top: 19%;
+	   margin-left:28% ;
+	   height:50px;
+	   width:50px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+	   cursor:pointer;}		
 
+
+
+#ddancing {margin-top: 15%;
+	   margin-left:5px;
+	   height:0px;
+	   width:0px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+		opacity: .50;}	
 .butts {position:absolute;
 		margin-left:70%;
 		margin-top:150%;
@@ -347,16 +374,17 @@ p {font-size: 0px;
 			margin-left:75%;
 			margin-top:130%;
 			z-index: 40;}
-#explore3 {margin-top:30%;
-	   height:400px;
+#explore3 {margin-top:0%;
+	   height:0px;
 	   padding: 5px;
-	   width:320px;
+	   width:0px;
+	   margin-left: 395px:;
 	   position:fixed;
 		clear:both;
 		z-index: 55}		
 #index {font-family: helv;
 		color:white;
-		font-size:16px;
+		font-size:0px;
 		letter-spacing: .25px;
 	line-height: 15px;
 	 text-align:left;}}
@@ -384,9 +412,26 @@ p {font-size: 0px;
 	   width:366px;
 	   display:block;
 	   position:fixed;
-		clear:both;}	
+		clear:both;}		
 
- 
+#ddancing {margin-top: 15%;
+	   margin-left:250px;
+	   height:0px;
+	   width:0px;
+	   position:fixed;
+	   z-index:10;
+	   clear:both;
+		opacity: .50;}
+
+#explore3 {margin-top:0%;
+	   height:0px;
+	   padding: 5px;
+	   width:0px;
+	   margin-left: 395px:;
+	   position:fixed;
+		clear:both;
+		z-index: 55}		
+
 
 .butts {position:absolute;
 		margin-left:70%;
@@ -404,6 +449,7 @@ p {font-size: 0px;
 	   position:fixed;
 	   cursor:pointer;
 		clear:both;}	
+
 #closer {height:0px;
 		 width:0px;
 		 margin:0px;
