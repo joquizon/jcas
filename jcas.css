@@ -1,11 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+
+/*resizing background*/
+/*#bg { z-index: -30;
+  position: fixed; 
+  top: 0; 
+  left: 0;*/ 	
+  /* Preserve aspet ratio */
+/*  min-width: 100%;
+  min-height: 100%;
+}*/
+
+
+
+
+/*.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }*/
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: blue;
+	background: url(loader3.gif) center no-repeat rgba( 150,150,150,.80);
+	background-size: 400px 400px;
+}
+
+#bodycover {position:fixed;
+	    left: -75px;
+    top: -153px;
+    z-index: -2;
+}
+.preload {display:none;}
+#subtitle {
+    margin-left: 341px;
+    font-family: helv;
+    color: white;
+    font-size: 25px;
+    letter-spacing: .25px;
+    line-height: 22px;
+    text-align: left;
+    position: absolute;
+    margin-top: 426px;
+width: 230px;
+	z-index: 5}
 @font-face {font-family: helv;
 			src:url(helvconlight.otf) ; }
+
+a{text-decoration: none}
 
 body {margin:0;
       padding:0px;
 	   border:0px;
-	   background-color:rgb(45,45,45);}
+	   background-color:rgb(158,186,166);}
 
 #index  {background-image: url();
 		height:100%;
@@ -60,86 +163,47 @@ body {margin:0;
 
 
 
-#dbutt  {display:block;		
-		width:40px;
-		height:40px;}
+#dbutt  {}
 
-#dbutt2  {display:block;		
-		width:40px;
-		height:40px;
-		margin-left: 30px;
-		margin-top:-10px;}
+#dbutt2 {
+    margin-left: 37px;
+    margin-top: 13px;
+}
 
-#dbutt3 {display:block;		
-		width:40px;
-		height:40px;
-		margin-left: -30px;
-		margin-top:-39px;}
+#dbutt3 {
+    margin-left: -36px;
+    margin-top: -40px;
+}
 
-#dbutt4  {display:block;		
-		width:40px;
-		height:40px;
-		margin-top: -10px}
+#dbutt4  {
+		margin-top: -4px}
 
+
+/*left and right rotational butts...first ones separated because all ff: butts are display none. same set up in mquery*/
 
 #butt  {display:block;		
 		width:40px;
 		height:40px;}
-#butt2 {display:none;		
-		width:40px;
-		height:40px;}
-#butt3 {display:none;		
-		width:40px;
-		height:40px;} 
-#butt4 {display:none;		
-		width:40px;
-		height:40px;}
-#butt5 {display:none;		
-		width:40px;
-		height:40px;}
-#butt6 {display:none;		
-		width:40px;
-		height:40px;}
-#butt7 {display:none;		
-		width:40px;
-		height:40px;}
-#butt8 {display:none;		
+.leftbutts {display:none;		
 		width:40px;
 		height:40px;}
 
 #butta  {display:block;		
 		width:40px;
 		height:40px;}
-#butt2a {display:none;		
+.rightbutts {display:none;		
 		width:40px;
 		height:40px;}
-#butt3a {display:none;		
-		width:40px;
-		height:40px;} 
-#butt4a {display:none;		
-		width:40px;
-		height:40px;}
-#butt5a {display:none;		
-		width:40px;
-		height:40px;}
-#butt6a {display:none;		
-		width:40px;
-		height:40px;}
-#butt7a {display:none;		
-		width:40px;
-		height:40px;}
-#butt8a {display:none;		
-		width:40px;
-		height:40px;}		
+	
 
 
 .first {z-index: 1;
 		clear:both;
-		float:left;}
+		}
 
 #imgholder {display:inline;
-				position:absolute;
-				margin-left:0px;}
+				margin-left:0px;
+				z-index: 9999}
 
 #exp1 {margin-top: 10%;
 	   margin-left:52% ;
@@ -156,7 +220,7 @@ body {margin:0;
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   clear:both;
+	   
 	   display:none;
 	   cursor:pointer;}	
 
@@ -175,7 +239,7 @@ body {margin:0;
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   clear:both;
+	   
 	   display:none;
 	   cursor:pointer;}	
 
@@ -185,7 +249,7 @@ body {margin:0;
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   clear:both;
+	   
 	   cursor:pointer;}		   		
 
 #exp3a {margin-top: 4%;
@@ -194,7 +258,6 @@ body {margin:0;
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   clear:both;
 	   display:none;
 	   cursor:pointer;}	
 
@@ -204,7 +267,7 @@ body {margin:0;
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   clear:both;
+	   
 	   cursor:pointer;}		   		
 
 #exp4a {margin-top: 13%;
@@ -213,43 +276,51 @@ body {margin:0;
 	   width:20px;
 	   position:absolute;
 	   z-index:10;
-	   clear:both;
+	   
 	   display:none;
 	   cursor:pointer;}	
 
 
 
 #wk {
-	   height:98px;
-	   width:320px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
+	   margin-top: 370px;
+    width: 330px;
+    position: fixed;
+    z-index: 10;
+    clear: both;
 	   }	
 
-#jcas {width:89%;
+/*#jcas {width:89%;
 	   height:89%;
 	   padding:0px;
 	   margin-left:9%;
-	   border:0px;}
+	   border:0px;
+	   display:block;}*/
+#jcas {
+    width: 89%;
+    padding: 0px;
+    margin-left: 9%;
+    opacity: 1;
+}
 
-#explore {margin-top: 0px;
-	   margin-left:80% ;
-	   height:392px;
-	   width:466px;
-	   position:fixed;
-	   cursor:pointer;
-		clear:both;}		
+#explore {
+    margin-top: 0px;
+    margin-left: 80%;
+    height: 392px;
+    width: 466px;
+    position: fixed;
+    clear: both;
+}	
 
-.nav {margin-top: 4px;
-	margin-right: 3px;
-	   height:10%;
-	   width:8%;}
+.nav {
+    margin-top: 11px;
+    height: 12%;
+}
 
-#expr {margin-top: 0px;
+#expr {margin-top: 8px;
 		margin-right: 3px;
-	   height:7%;
-	   width:10%;}		
+	   width: 10%;
+    height: 12%;}		
 
 #closer {height:0px;
 		 width:0px;
@@ -265,7 +336,7 @@ body {margin:0;
 	line-height: 15px;
 	 text-align:left; }
 
-#explore2 {background-color: rgb(255, 255, 255, 0);
+#explore2 {background-color: rgb(100, 100, 100, 0);
 		margin-top: 70px;
 	   margin-left:75% ;
 	   margin-right: 20%;
@@ -279,376 +350,1046 @@ body {margin:0;
 		border-radius: 12px;
 		cursor:pointer;}
 
+.dbutts {display:block;		
+		width:40px;
+		height:40px;	
+		z-index:30;
+}
 
-#explore3 {margin-top: 7%;
-	   height:400px;
-	   padding: 5px;
-	   width:320px;
-	   position:fixed;
-		clear:both;
-		z-index: 55}		
+
+#explore3 {    margin-top: 453px;
+    height: 400px;
+    padding: 5px;
+    width: 275px;
+    position: fixed;
+    clear: both;
+    z-index: 55;}		
 #index {font-family: helv;
-		color:white;
-		font-size:17px;
-		letter-spacing: .25px;
-	line-height: 25px;
-	 text-align:left;}
+    color: white;
+    font-size: 17px;
+    letter-spacing: .25px;
+    line-height: 22px;
+    text-align: left;}
 p {font-size: 0px;
 	color:rgb(45, 45, 45);
 	font-family: helv;
 	letter-spacing: .25px;
 	line-height: 25px;
 	 text-align:center; }	
+
+.dancers{z-index: 1;
+		clear:both;
+		
+		width:89%;
+	   height:89%;
+	   padding:0px;
+	   margin-left:9%;
+	   border:0px;
+		display:none;}
+
+	.leftturn	{z-index: 1;
+		clear:both;
+		
+		width:89%;
+	   height:89%;
+	   padding:0px;
+	   margin-left:9%;
+	   border:0px;
+		display:none;}
+
+	.rightturn	{z-index: 1;
+		clear:both;
+		
+		width:89%;
+	   height:89%;
+	   padding:0px;
+	   margin-left:9%;
+	   border:0px;
+		display:none;}	
+
+	.bodyplode	{z-index: 1;
+		clear:both;
+		
+		width:89%;
+	   height:89%;
+	   padding:0px;
+	   margin-left:9%;
+	   border:0px;
+		display:none;}		
+
+	.armplode	{z-index: 1;
+		clear:both;
+		
+		width:89%;
+	   height:89%;
+	   padding:0px;
+	   margin-left:9%;
+	   border:0px;
+		display:none;}
+
+	.legplode {z-index: 1;
+		clear:both;
+		
+		width:89%;
+	   height:89%;
+	   padding:0px;
+	   margin-left:9%;
+	   border:0px;
+		display:none;}
+
+	.headplode {z-index: 1;
+		clear:both;
+		
+		width:89%;
+	   height:89%;
+	   padding:0px;
+	   margin-left:9%;
+	   border:0px;
+		display:none;}
+
  /**/
 
-
-@media (max-width: 400px) {
+/*portrait phone samsung/iphone6 */
+@media (max-width: 414px)and (max-height: 736px){
+    .dancebutts {
+    position: absolute;
+    margin-left: 159px;
+    margin-top: 541px;
+    z-index: 40;
+    cursor: pointer;
+}
 #wk {
-	   height:52px;
-	   width:176px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   }	
-
-#jcas {width:275%;
-	   height:275%;
-	   padding:0px;
-	   margin-left:-70%;
-	   margin-top:34%;
-	   border:0px;}
-
-#explore {margin-top: 10%;
-	   margin-left:0% ;
-	   height:292px;
-	   width:366px;
-	   display:block;
-	   position:fixed;
-		clear:both;}	
-#thought {margin-top: 19%;
-	   margin-left:28% ;
-	   height:50px;
-	   width:50px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   cursor:pointer;}		
-
-
-
-#ddancing {margin-top: 15%;
-	   margin-left:5px;
-	   height:0px;
-	   width:0px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-		opacity: .50;}	
-.butts {position:absolute;
-		margin-left:70%;
-		margin-top:150%;
-		z-index: 40;}
-.buttsrev {position:absolute;
-		   margin-left:85%;
-		   margin-top:150%;
-		   z-index: 40;}
-
-#exp1 {height:0px;
-		width:0px;}		
-
-#exp1a {height:0px;
-		width:0px;}		
-#exp2 {height:0px;
-		width:0px;}		
-#exp2a {height:0px;
-		width:0px;}		
-#exp3 {height:0px;
-		width:0px;}		
-#exp3a {height:0px;
-		width:0px;}		
-#exp4 {height:0px;
-		width:0px;}		
-#exp4a {height:0px;
-		width:0px;}		
-.dancebutts {position:absolute;
-			margin-left:75%;
-			margin-top:130%;
-			z-index: 40;}
-#explore3 {margin-top:0%;
-	   height:0px;
-	   padding: 5px;
-	   width:0px;
-	   margin-left: 395px:;
-	   position:fixed;
-		clear:both;
-		z-index: 55}		
-#index {font-family: helv;
-		color:white;
-		font-size:0px;
-		letter-spacing: .25px;
-	line-height: 15px;
-	 text-align:left;}}
-
-
-@media (min-width:380px)and (max-width:678px){
-#wk {
-	   height:52px;
-	   width:176px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   }	
-
-#jcas {width:95%;
-	   height:95%;
-	   padding:0px;
-	   margin-left:10%;
-	   margin-top:2%;
-	   border:0px;}
-
-#explore {margin-top: 0%;
-	   margin-left:0% ;
-	   height:292px;
-	   width:366px;
-	   display:block;
-	   position:fixed;
-		clear:both;}		
-
-#ddancing {margin-top: 15%;
-	   margin-left:250px;
-	   height:0px;
-	   width:0px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-		opacity: .50;}
-
-#explore3 {margin-top:0%;
-	   height:0px;
-	   padding: 5px;
-	   width:0px;
-	   margin-left: 395px:;
-	   position:fixed;
-		clear:both;
-		z-index: 55}		
-
-
-.butts {position:absolute;
-		margin-left:70%;
-		margin-top:30%;
-		z-index: 40;}
-.buttsrev {position:absolute;
-		   margin-left:85%;
-		   margin-top:30%;
-		   z-index: 40;}
-
-#explore {margin-top: 0px;
-	   margin-left:72% ;
-	   height:392px;
-	   width:466px;
-	   position:fixed;
-	   cursor:pointer;
-		clear:both;}	
-
-#closer {height:0px;
-		 width:0px;
-		 margin:0px;
-		 margin-left:0px}
-
-#desc2 {font-size: 0px;
-	margin-top: 0px;
-	color:white;
-	font-family: helv;
-	letter-spacing: .55px;
-	line-height: 15px;
-	 text-align:left; }
-
-#explore2 {background-color: rgb(255, 255, 255, 0);
-		margin-top: 70px;
-	   margin-left:0% ;
-	   margin-right:0%;
-	   height:0px;
-	   padding: 5px;
-	   width:0px;
-	   position:fixed;
-		clear:both;
-		z-index: 55;
-		border:2px;
-		border-radius: 12px;
-		cursor:pointer;}
-.dancebutts {position:absolute;
-			margin-left:75%;
-			margin-top:20%;
-			z-index: 40;}
-
-#exp1 {margin-top: 10%;
-	   margin-left:54% ;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   cursor:pointer;}	
-
-#exp1a {margin-top:10%;
-	   margin-left:54% ;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   display:none;
-	   cursor:pointer;}	
-
-#exp2 {margin-top: 24%;
-	   margin-left: 52.55% ;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   cursor:pointer;}		   		
-
-#exp2a {margin-top: 24%;
-	   margin-left: 52.55%;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   display:none;
-	   cursor:pointer;}	
-
-#exp3 {margin-top: 4%;
-	   margin-left:51.25% ;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   cursor:pointer;}		   		
-
-#exp3a {margin-top: 4%;
-	   margin-left:52.75% ;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   display:none;
-	   cursor:pointer;}	
-
-#exp4 {margin-top: 13%;
-	   margin-left:48% ;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   cursor:pointer;}		   		
-
-#exp4a {margin-top: 13%;
-	   margin-left:48% ;
-	   height:20px;
-	   width:20px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   display:none;
-	   cursor:pointer;}
-#explore3 {margin-top:6%;
-	   height:400px;
-	   padding: 5px;
-	   width:180px;
-	   position:fixed;
-		clear:both;
-		z-index: 55}		
-#index {font-family: helv;
-		color:white;
-		font-size:14px;
-		letter-spacing: .5px;
-	line-height:13px;
-	 text-align:left;}
-
+    margin-top: 3px;
+    width: 330px;
+    position: fixed;
+    z-index: 10;
+    clear: both;
+}
+.nav {
+    margin-top: 11px;
+    height: 8%;}
+#expr {
+    margin-top: 8px;
+    margin-right: 3px;
+    width: 6%;
+    height: 8%;
+}   
+#explore {
+    margin-top: 80px;
+    margin-left: 242px;
+    height: 392px;
+    width: 466px;
+    position: fixed;
+    clear: both;
+}
+#jcas {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.dancers {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.first {
+    z-index: 1;
+    clear: both;
 }
 
-/**/
-@media (min-width: 668px) and (max-width: 700px){
+.leftturn {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.rightturn {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.legplode {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.armplode {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.headplode {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.bodyplode {
+    margin-top: 73px;
+    width: 932px;
+    height:524px;
+    padding: 0px;
+    margin-left: -219px;
+    opacity: 1;
+}
+.butts {
+    position: absolute;
+    margin-left: 124px;
+    margin-top: 574px;
+    z-index: 40;
+    cursor: pointer;
+}
+.buttsrev {
+    position: absolute;
+    margin-left: 191px;
+    margin-top: 574px;
+    z-index: 40;
+    cursor: pointer;
+}
+
+#bodycover{
+	    position: fixed;
+    left: -387px;
+    top: 130px;
+    z-index: -2;
+    width: 1098px;
+}
+#index{
+	display: none;
+}
+#subtitle{    
+	margin-left: 1px;
+    font-family: helv;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1.25px;
+    line-height: 22px;
+    text-align: left;
+    position: absolute;
+    margin-top: 79px;
+    width: 230px;
+    z-index: 25;
+}
+#exp3 {
+    margin-top: 105px;
+    margin-left: 201px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+#exp3a {
+    margin-top: 105px;
+    margin-left: 152px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+#exp1 {
+    margin-top: 176px;
+    margin-left: 238px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+#exp1a {
+    margin-top: 176px;
+    margin-left: 238px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+#exp4 {
+    margin-top: 220px;
+    margin-left: 158px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+#exp4a{
+    margin-top: 220px;
+    margin-left: 158px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+#exp2 {
+    margin-top: 325px;
+    margin-left: 219px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+#exp2a {
+    margin-top: 325px;
+    margin-left: 219px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+
+#explore2 {
+    z-index: 500;
+    margin-top: 127px;
+    margin-left: 139px;
+}
+
+#maincontain {
+    width:360px;
+    height:640px;
+    overflow:hidden;
+}    
+
+#index {
+    margin-top: 1px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 13px;
+}
+
+#explore3{
+        width: 190px;
+}
+}
+
+
+/*landscape phone samsung*/
+@media (max-height: 414px)and (max-width: 736px){
+	#wk {
+    margin-top: 185px;
+    width: 198px;
+    position: fixed;
+    z-index: 10;
+    clear: both;
+}
+#subtitle {
+    margin-left: 201px;
+    font-family: helv;
+    color: white;
+    font-size: 19px;
+    letter-spacing: .25px;
+    line-height: 22px;
+    text-align: left;
+    position: absolute;
+    margin-top: 215px;
+    width: 230px;
+    z-index: 5;
+}
+#explore {
+    margin-top: 0px;
+    margin-left: 82%;
+    height: 392px;
+    width: 466px;
+    position: fixed;
+    clear: both;
+    z-index: 50;
+}
+#expr {
+    margin-top: 8px;
+    margin-right: 3px;
+    width: 6%;
+    height: 8%;
+}
+.nav {
+    margin-top: 11px;
+    height: 8%;
+}
+#bodycover {
+    width: 723px;
+    position: fixed;
+    left: 75px;
+    top: 13px;
+    z-index: -2;
+}
+
+#jcas {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.leftturn {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.rightturn {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.bodyplode {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.headplode {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.armplode {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.legplode {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.dancers {
+        width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin-left: 35px;
+    margin-top: -13px;
+    opacity: 1;
+    position: fixed;
+}
+.first {
+    z-index: 1;
+    clear: both;
+}
+
+#bodyplode {
+    margin-top: 4px;
+    margin-left: 82px;
+    width: 98%;
+    height: 98%;
+}
+
+#exp3 {
+    margin-top: 15px;
+    margin-left: 356px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+#exp1 {
+    margin-top: 57px;
+    margin-left: 378px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+#exp4 {
+    margin-top: 86px;
+    margin-left: 320px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+#exp2 {
+    margin-top: 169px;
+    margin-left: 366px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+.buttsrev {
+    position: absolute;
+    margin-left: 524px;
+    margin-top: 191px;
+    z-index: 70;
+    cursor: pointer;
+}
+.butts {
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 191px;
+    z-index: 70;
+    cursor: pointer;
+}
+.dancebutts {
+    position: absolute;
+    margin-left: 77%;
+    margin-top: 27%;
+    z-index: 70;
+    cursor: pointer;
+}
+#explore2 {
+    margin-top: 53px;
+    margin-left: 420px;}
+
+#maincontain {
+    width:640px;
+    height:360px;
+    overflow: hidden;
+}    
+
+#explore2 {
+    z-index: 500;
+    margin-top: 46px;
+    margin-left: 441px;
+}
+
+#index {
+    margin-top: -219px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 13px;
+}
+
+#explore3{
+        width: 190px;
+}
+}
+
+
+/*portrait ipad*/
+@media (min-device-width: 768px) and (max-device-width:780px) and (min-device-height: 1024px){
+
 #wk {
-	   height:69px;
-	   width:235px;
-	   position:fixed;
-	   z-index:10;
-	   clear:both;
-	   }	
+    margin-top: 5px;
+    width: 390px;
+    position: fixed;
+    z-index: 10;
+    clear: both;
+}
 
-#jcas {width:140%;
-	   height:140%;
-	   padding:0px;
-	   margin-left:2%;
-	   margin-top:2%;
-	   border:0px;}
+#explore {
+    margin-top: 5px;
+    margin-left: 78%;
+    height: 392px;
+    width: 466px;
+    position: fixed;
+    clear: both;
+}
 
-#explore {margin-top:0%;
-	   margin-left:65% ;
-	   height:292px;
-	   width:366px;
-	   display:block;
-	   position:fixed;
-		clear:both;}	
+#jcas {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+}
 
-.butts {position:absolute;
-		margin-left:70%;
-		margin-top:150%;
-		z-index: 40;}
-.buttsrev {position:absolute;
-		   margin-left:85%;
-		   margin-top:150%;
-		   z-index: 40;}
+.leftturn {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+} 
+.rightturn {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+}
+.bodyplode {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+}
+.headplode {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+}
+.armplode {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+}
+.legplode {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+}
+.dancers {
+    width: 1588px;
+    height: 893px;
+    padding: 0px;
+    margin-left: -36%;
+    opacity: 1;
+    margin-top: 8%;
+}
+.first {
+    width: 150%;
+    padding: 0px;
+    margin-left: -9%;
+    opacity: 1;
+    margin-top: 26%;
+}
+#butt {
+    height:80px;
+    width:80px;
+}
+#butta {
+    height:80px;
+    width:80px;
+}
 
-#closer {height:0px;
-		 width:0px;
-		 margin:0px;
-		 margin-left:0px}
+.leftbutts{
+    height:80px;
+    width:80px;
+}
+.rightbutts{
+    height:80px;
+    width:80px;
+}
 
-#desc2 {font-size: 0px;
-	margin-top: 0px;
-	color:white;
-	font-family: helv;
-	letter-spacing: .55px;
-	line-height: 15px;
-	 text-align:left; }
+.butts{
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 115%;
+    z-index: 40;
+    cursor: pointer;
+}
 
-#explore2 {background-color: rgb(255, 255, 255, 0);
-		margin-top: 70px;
-	   margin-left:0% ;
-	   margin-right: 20%;
-	   height:0px;
-	   padding: 5px;
-	   width:0px;
-	   position:fixed;
-		clear:both;
-		z-index: 55;
-		border:2px;
-		border-radius: 12px;
-		cursor:pointer;}
+.buttsrev {
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 115%;
+    z-index: 40;
+    cursor: pointer;
+}
+#maincontain {
+    width:768px;
+    height:1024px;
+    overflow: hidden;
+}
 
-.dancebutts {position:absolute;
-			margin-left:75%;
-			margin-top:130%;
-			z-index: 40;}
-#explore3 {margin-top:30%;
-	   height:400px;
-	   padding: 5px;
-	   width:320px;
-	   position:fixed;
-		clear:both;
-		z-index: 55}		
-#index {font-family: helv;
-		color:white;
-		font-size:16px;
-		letter-spacing: .25px;
-	line-height: 15px;
-	 text-align:left;}}
+#exp2 {
+    margin-top: 64%;
+    margin-left: 62%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
 
+#exp2a {
+    margin-top: 64%;
+    margin-left: 59%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
 
+#exp4 {
+    margin-top: 35%;
+    margin-left: 49%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#exp4a {
+    margin-top: 38%;
+    margin-left: 49%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#exp1 {
+    margin-top: 30%;
+    margin-left: 64%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+
+#exp1a {
+    margin-top: 30%;
+    margin-left: 64%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+
+#exp3 {
+    margin-top: 17%;
+    margin-left: 58%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#exp3a {
+    margin-top: 17%;
+    margin-left: 61%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.dancebutts {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 114%;
+    z-index: 40;
+    cursor: pointer;
+}
+
+#bodycover {
+    position: fixed;
+        left: -576px;
+    top: -38px;
+    z-index: -2;
+}
+
+#explore3 {
+    margin-top: 131px;
+    width: 192px;
+}
+
+#subtitle {
+    margin-left: 5px;
+    font-family: helv;
+    color: white;
+    font-size: 30px;
+    letter-spacing: .25px;
+    line-height: 22px;
+    text-align: left;
+    position: absolute;
+    margin-top: 100px;
+    width: 230px;
+    z-index: 5;
+}
+
+#explore2{
+    margin-left: 71%;
+
+}
+}
+
+/*landscape ipad*/
+@media (min-device-height: 768px) and (min-device-width: 1024px) and (max-device-width:1030px){
+
+#explore {
+    margin-top: 0px;
+    margin-left: 84%;
+    height: 392px;
+    width: 466px;
+    position: fixed;
+    clear: both;
+}
+
+.butts {
+    position: absolute;
+    margin-left: 77%;
+    margin-top: 40%;
+    z-index: 40;
+    cursor: pointer;
+}
+
+.buttsrev {
+    position: absolute;
+    margin-left: 84%;
+    margin-top: 40%;
+    z-index: 40;
+    cursor: pointer;
+}
+
+#jcas {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+.leftturn {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+.rightturn {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+.bodyplode {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+.headplode {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+.armplode {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+.legplode {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+.dancers {
+    width: 1220px;
+    height: 686px;
+    padding: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 1;
+}
+
+    #maincontain {
+    height:768px;
+    width:1024px;
+    overflow: hidden;
+}
+
+#butt {
+    height:50px;
+    width:50px;
+}
+#butta {
+    height:50px;
+    width:50px;
+}
+
+.leftbutts{
+    height:60px;
+    width:60px;
+}
+.rightbutts{
+    height:50px;
+    width:50px;
+}
+
+#exp2 {
+    margin-top: 37%;
+    margin-left: 61%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+
+#exp2a {
+    margin-top: 37%;
+    margin-left: 58%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+
+#exp4 {
+    margin-top: 20%;
+    margin-left: 53%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#exp4a {
+    margin-top: 22%;
+    margin-left: 54%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#exp1 {
+    margin-top: 18%;
+    margin-left: 63%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+
+#exp1a {
+    margin-top: 18%;
+    margin-left: 63%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    clear: both;
+    cursor: pointer;
+}
+
+#exp3 {
+    margin-top: 10%;
+    margin-left: 59%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#exp3a {
+    margin-top: 10%;
+    margin-left: 61%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.dancebutts {
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 36%;
+    z-index: 40;
+    cursor: pointer;
+}
+
+#bodycover {
+    position: fixed;
+    left: -274px;
+    top: -153px;
+    z-index: -2;
+}
+#explore2 {
+    margin-left: 79%;
+}
+}
